@@ -1,1 +1,0 @@
-web gunicorn mloblig3: app WEB_CONCURRENCY=1 --preload

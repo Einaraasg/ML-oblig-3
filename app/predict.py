@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 
-model = joblib.load('app/forest_reg_model.joblib')
+model = joblib.load('models/forest_reg_model.joblib')
 
 
 
