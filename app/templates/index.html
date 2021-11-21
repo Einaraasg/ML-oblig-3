@@ -1,0 +1,25 @@
+{% extends "bootstrap/base.html" %}
+{%import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+
+<div class ='container'>
+<p>Predict the revenue of a movie by filling out the information below</p>
+
+
+</div>
+
+<div class='container'>
+    {{ wtf.quick_form(form) }}
+</div>
+
+<div class='container'>
+
+<h3>{% if session.get('pred')%} The predicted revenue of the movie is {{session.get('pred')}} dollars {% else %} {% endif %}</h3>
+
+</div>
+
+
+
+
+{% endblock %}
